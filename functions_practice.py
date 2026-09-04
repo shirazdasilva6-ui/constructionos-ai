@@ -8,4 +8,21 @@ project = {
     "budget_remaining": 45000.50,
     "is_over_budget": False
 }
-describe_project(project)    
+
+project2 = {
+    "project_name": "Stellies",
+    "is_over_budget": True,
+    "budget_remaining": 5000,
+}
+
+project3 = {
+    "project_name": "Brakkies",
+    "is_over_budget": False,
+    "budget_remaining": "6500"
+}
+
+projects = [project, project2, project3]
+
+describe_project(projects[0])
+describe_project(projects[1])
+describe_project(projects[2])
