@@ -26,3 +26,6 @@ projects = [project, project2, project3]
 describe_project(projects[0])
 describe_project(projects[1])
 describe_project(projects[2])
+
+for project in projects:
+    describe_project(project)
