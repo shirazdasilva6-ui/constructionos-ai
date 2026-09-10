@@ -1,6 +1,10 @@
 def describe_project(project):
     print(project["project_name"])
-    print(project["is_over_budget"])
+    if project["is_over_budget"]:
+        print("This project needs attention!")
+    else:
+        print("this project is on track.")
+        
 
 project = {
     "project_name": "ConstructionOS AI",
@@ -29,3 +33,4 @@ describe_project(projects[2])
 
 for project in projects:
     describe_project(project)
+
