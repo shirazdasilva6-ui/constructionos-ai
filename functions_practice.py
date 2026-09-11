@@ -40,3 +40,9 @@ def is_over_budget_check(project):
 result = is_over_budget_check(project2)
 print(result)
 
+over_budget_projects = []
+for project in projects:
+    if is_over_budget_check(project):
+        over_budget_projects.append(project)
+for project in over_budget_projects:
+    describe_project(project)
