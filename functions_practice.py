@@ -34,3 +34,9 @@ describe_project(projects[2])
 for project in projects:
     describe_project(project)
 
+def is_over_budget_check(project):
+    return project["is_over_budget"]
+
+result = is_over_budget_check(project2)
+print(result)
+
