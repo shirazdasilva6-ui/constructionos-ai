@@ -1,4 +1,4 @@
-def describe_project(project):
+def describe_project(project: dict) -> None:
     print(project["project_name"])
     if project["is_over_budget"]:
         print("This project needs attention!")
@@ -34,7 +34,7 @@ describe_project(projects[2])
 for project in projects:
     describe_project(project)
 
-def is_over_budget_check(project):
+def is_over_budget_check(project: dict) -> bool:
     return project["is_over_budget"]
 
 result = is_over_budget_check(project2)
