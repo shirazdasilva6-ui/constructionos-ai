@@ -16,13 +16,13 @@ project = {
 project2 = {
     "project_name": "Stellies",
     "is_over_budget": True,
-    "budget_remaining": 5000,
+    "budget_remaining": 5000
 }
 
 project3 = {
     "project_name": "Brakkies",
     "is_over_budget": False,
-    "budget_remaining": "6500"
+    "budget_remaining": 6500
 }
 
 projects = [project, project2, project3]
@@ -46,3 +46,15 @@ for project in projects:
         over_budget_projects.append(project)
 for project in over_budget_projects:
     describe_project(project)
+
+def get_budget_remaining(project: dict) -> float:
+    try:
+        return(project["budget_remaining"])
+    except KeyError:
+        return(0.0)
+
+print(get_budget_remaining(project2))
+print(get_budget_remaining({"project_name": "Empty"}))
+
+
+
